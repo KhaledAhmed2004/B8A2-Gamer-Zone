@@ -250,12 +250,12 @@ main {
   border-radius: 16px;
 }
 .online-game-title {
-  text-align: center;
-  /* padding-top: 100px; */
+  /* text-align: center; */
+  padding-top: 100px;
   display: none;
-  /* width: 250px;
+  width: 250px;
   height: 200px;
-  border-radius: 16px; */
+  border-radius: 16px;
 }
 .online-game-img-1:hover .online-game-title{
   display: block;
@@ -600,9 +600,13 @@ footer {
 @media screen and (min-width:576px) and (max-width: 960px){
   nav{
     flex-direction: column;
+    padding: 30px 0px;
   }
   .banner{
     flex-direction: column;
     padding-top: 50px;
+  }
+  .we-are-gammer-section{
+    display: none;
   }
 }
