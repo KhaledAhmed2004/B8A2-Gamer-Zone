@@ -288,6 +288,9 @@ main {
   width: 300px;
 }
 /* button icon section */
+.btn-icon-container-mobile{
+  display: none;
+}
 .btn-container {
   height: 300px;
   padding-top: 50px;
@@ -438,7 +441,7 @@ footer {
   main {
     padding: 0;
   }
-  .banner{
+  .banner {
     padding: 0;
   }
   .we-are-gammer-section {
@@ -466,5 +469,20 @@ footer {
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
+  }
+  .play-instently-container {
+    flex-direction: column;
+    padding-top: 1150px;
+  }
+  .btn-icon-section {
+    margin-top: 68.75rem;
+  }
+  .btn-icon-2nd-row,.btn-icont-1st-row{
+    display: none;
+  }
+  .btn-icon-container-mobile{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
   }
 }
