@@ -1,6 +1,11 @@
 :root {
   --liner: #ff42a5;
 }
+main,
+header {
+  max-width: 1145px;
+  margin: 0 auto;
+}
 /* common styles */
 * {
   font-family: "Work Sans", sans-serif;
@@ -44,9 +49,10 @@
 nav {
   display: flex;
   background: #fff;
-  padding: 0 10rem;
+  padding: 0 8rem;
   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
   height: 7.5rem;
+  gap: 5px;
   justify-content: space-between;
   align-items: center;
 }
@@ -217,6 +223,8 @@ main {
 }
 .online-game-article p {
   text-align: center;
+  margin: 5px;
+  padding: 20px 0;
 }
 .online-game-box {
   display: flex;
@@ -230,6 +238,19 @@ main {
   height: 300px;
   width: 250px;
   border-radius: 16px;
+}
+.game-box-img:hover {
+  display: block;
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.6) 100%
+  );
+  color: #f948b2;
+  border: 3px solid #f948b2;
+  height: 300px;
+  width: 250px;
+  border-radius: 18px;
 }
 /* play instently container */
 .play-instently-container {
@@ -251,10 +272,9 @@ main {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.play-instently-big-img{
+.play-instently-big-img {
   height: 530px;
   width: 500px;
-  
 }
 .play-instently-small-img {
   padding: 40px;
@@ -263,7 +283,7 @@ main {
   bottom: 300px;
   right: 200px;
 }
-.play-instently-small-img img{
+.play-instently-small-img img {
   height: 315px;
   width: 300px;
 }
@@ -272,16 +292,23 @@ main {
   height: 300px;
   padding-top: 50px;
 }
-.btn-icon-2nd-row{
-  padding-top:20px ;
-}
+/* .btn-icon-2nd-row {
+  padding-top: 20px;
+} */
 .btn-icont-1st-row {
   display: flex;
-  gap: 5px;
+  gap: 2px;
+  padding-top: 20px;
+  align-items: center;
+  justify-content: center;
 }
 .btn-icon-2nd-row {
+  width: 62.625rem;
+  margin: 0 auto;
   display: flex;
   gap: 5px;
+  justify-content: center;
+  padding-top: 20px;
 }
 .button-box a {
   color: #0b0223;
@@ -368,7 +395,7 @@ footer {
   justify-content: center;
 }
 .hidden {
-  visibility: hidden;
+  display: none;
 }
 /* responsive  styles start */
 
@@ -408,6 +435,12 @@ footer {
   /* main section start*/
 
   /* we are gamer section */
+  main {
+    padding: 0;
+  }
+  .banner{
+    padding: 0;
+  }
   .we-are-gammer-section {
     flex-direction: column;
     border: 1px solid red;
@@ -421,5 +454,17 @@ footer {
   }
   .we-are-gammer-section {
     display: none;
+  }
+  /* online game */
+  .online-game-section {
+    margin-top: 250px;
+    display: flex;
+    flex-direction: column;
+  }
+  .online-game-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
   }
 }
