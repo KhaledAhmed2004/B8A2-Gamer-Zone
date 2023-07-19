@@ -620,5 +620,7 @@ footer {
   }
   .play-instently-container{
     margin-top: 500px;
+    flex-direction: column;
+    align-items: baseline;
   }
 }
