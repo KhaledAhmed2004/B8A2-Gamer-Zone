@@ -595,3 +595,13 @@ footer {
     gap: 1.5rem;
   }
 }
+/* mediam devise styles*/
+@media screen and (min-width:576px) and (max-width: 960px){
+  nav{
+    flex-direction: column;
+  }
+  .banner{
+    flex-direction: column;
+    padding-top: 50px;
+  }
+}
