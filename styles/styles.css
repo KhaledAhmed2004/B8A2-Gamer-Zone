@@ -609,4 +609,16 @@ footer {
   .we-are-gammer-section{
     display: none;
   }
+  .online-game-section{
+    margin-top: 500px;
+  }
+  .online-game-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 100px;
+    justify-content: center;
+  }
+  .play-instently-container{
+    margin-top: 500px;
+  }
 }
