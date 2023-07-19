@@ -623,6 +623,14 @@ footer {
     flex-direction: column;
     align-items: baseline;
   }
+  .btn-icon-2nd-row,.btn-icont-1st-row{
+    display: none;
+  }
+  .btn-icon-container-mobile{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3,1fr);
+  }
   .btn-icon-section{
     margin-top: 150px;
   }
