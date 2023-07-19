@@ -623,4 +623,7 @@ footer {
     flex-direction: column;
     align-items: baseline;
   }
+  .btn-icon-section{
+    margin-top: 150px;
+  }
 }
