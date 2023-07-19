@@ -2,7 +2,7 @@
   --liner: #ff42a5;
 }
 main,
-header {
+header{
   max-width: 1145px;
   margin: 0 auto;
 }
@@ -49,7 +49,7 @@ header {
 nav {
   display: flex;
   background: #fff;
-  padding: 0 8rem;
+  padding-left: 8rem;
   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
   height: 7.5rem;
   gap: 5px;
@@ -104,6 +104,7 @@ nav li {
 /* banner styles */
 .banner {
   display: flex;
+  gap: 9.8rem;
   align-items: center;
   height: 500px;
   padding: 0 8rem;
@@ -234,24 +235,115 @@ main {
   width: 250px;
   height: 60px;
 }
-.game-box-img img {
-  height: 300px;
+
+/* online-img */
+
+/* online-game-img-1 */
+
+.online-game-img-1 {
+  background-image: url(../images/Rectangle\ 4.png);
+  background-size: cover;
+  background-position: center;
   width: 250px;
+  height: 300px;
+  background-repeat: no-repeat;
   border-radius: 16px;
 }
-.game-box-img:hover {
+.online-game-img-1:hover .online-game-title {
   display: block;
-  background-image: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 0.6),
-    rgba(0, 0, 0, 0.6) 100%
-  );
-  color: #f948b2;
-  border: 3px solid #f948b2;
-  height: 300px;
-  width: 250px;
-  border-radius: 18px;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.60)100%);
+  color: #F948B2;
+  border: 2px solid #F948B2;
 }
+.online-game-title {
+  text-align: center;
+  padding-top: 100px;
+  display: none;
+  width: 250px;
+  height: 200px;
+  border-radius: 16px;
+}
+
+.online-game-img-2 {
+  background-image: url(../images/Rectangle\ 5.png);
+  background-size: cover;
+  background-position: center;
+  width: 250px;
+  height: 300px;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+.online-game-img-2:hover .online-game-title {
+  display: block;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.60)100%);
+  color: #F948B2;
+  border: 2px solid #F948B2;
+}
+.online-game-title {
+  text-align: center;
+  padding-top: 100px;
+  display: none;
+  width: 250px;
+  height: 200px;
+  border-radius: 16px;
+}
+.online-game-img-3 {
+  background-image: url(../images/Rectangle\ 6.png);
+  background-size: cover;
+  background-position: center;
+  width: 250px;
+  height: 300px;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+.online-game-img-3:hover .online-game-title {
+  display: block;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.60)100%);
+  color: #F948B2;
+  border: 2px solid #F948B2;
+}
+.online-game-title {
+  text-align: center;
+  padding-top: 100px;
+  display: none;
+  width: 250px;
+  height: 200px;
+  border-radius: 16px;
+}
+.online-game-img-4 {
+  background-image: url(../images/Rectangle\ 7.png);
+  background-size: cover;
+  background-position: center;
+  width: 250px;
+  height: 300px;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+.online-game-img-4:hover .online-game-title {
+  display: block;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.60)100%);
+  color: #F948B2;
+  border: 2px solid #F948B2;
+}
+.online-game-title {
+  text-align: center;
+  padding-top: 100px;
+  display: none;
+  width: 250px;
+  height: 200px;
+  border-radius: 16px;
+}
+/*  */
+.online-game-tittle {
+  color: #534C64;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  margin-top: 300px;
+  text-align: center;
+  display: block;
+}
+
 /* play instently container */
 .play-instently-container {
   display: flex;
@@ -288,7 +380,7 @@ main {
   width: 300px;
 }
 /* button icon section */
-.btn-icon-container-mobile{
+.btn-icon-container-mobile {
   display: none;
 }
 .btn-container {
@@ -469,6 +561,10 @@ footer {
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
+    gap: 100px;
+  }
+  .button-box{
+    padding: 0px;
   }
   .play-instently-container {
     flex-direction: column;
@@ -477,12 +573,25 @@ footer {
   .btn-icon-section {
     margin-top: 68.75rem;
   }
-  .btn-icon-2nd-row,.btn-icont-1st-row{
+  .btn-icon-2nd-row,
+  .btn-icont-1st-row {
     display: none;
   }
-  .btn-icon-container-mobile{
+  .btn-icon-container-mobile {
+    margin-top: 100px;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+  footer{
+    height: 100vh;
+    margin-top: 250px;
+  }
+  .white-icon{
+    margin-right: 20px;
+  }
+  .footer-tittle-h5{
+    padding: 5px;
+    gap: 1.5rem;
   }
 }
